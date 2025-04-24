@@ -84,6 +84,7 @@ public:
             throw std::out_of_range("back() deque is empty!");
         return _data[(_back + _cap - 1) % _cap];
     }
+    
 
     T& operator[](size_t idx) {
         if (idx >= _size)
